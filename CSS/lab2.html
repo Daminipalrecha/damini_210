@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Damini_CSS demonstration2</title>
+	<style>
+		body{ background: powderblue; }
+
+		section > p{font-family: comic sans ms ;}
+
+		p{font-size: 20px;}
+
+		p>span{ color: green;}
+
+		div{ border: 2px solid white ; }
+
+         .dp{font-family: 	Courier New ;}
+
+         span{background: silver ; }
+
+         article{font-family: Courier ;}
+
+         article p,a{
+         	margin-bottom: 1px;
+         	background-color: orange ;
+         	border: 1px solid navy ; 
+         	width: 184.6px ;}
+
+         a:hover , a:active
+         {
+           background-color: grey;
+           color : navy;
+           
+         }
+
+
+	</style>
+</head>
+<body>
+
+<h1 class="dp">Class selector and pseudo selector</h1>
+<p>Here I am displaying some styles(CSS) with use of <span><u>class selector and pseudo selector(inside span)</u></span>.</p>
+
+<section>
+<h2 class="dp">This is a h2 tag with class dp.</h2>
+<p>This is para tag with no tag inside it and is direct child of section.</p>
+<div>It's a div tag with a <span class="dp">span tag(end span)</span> inside it.<p>A para tag inside span which is inside div.End para.</p>End div.</div>
+</section>
+
+<p>Its a para tag with 
+<span>span and one more span inside it.
+End of span1.</span>
+Now both span ended.End of para too.</p>
+
+<article>The only article tag containing one p tag.
+<p><a style="text-decoration:none; " href="https://daminipalrecha.github.io/damini_210/site/" target="_blank">Damini Palrecha</a></p>
+<p>Roll No. A034</p>
