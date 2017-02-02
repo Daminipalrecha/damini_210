@@ -1,0 +1,121 @@
+body{
+	background-color: #F5FFFA ; 
+}
+
+h1{
+	font-variant: small-caps;
+	background-color: #98FB98 ;
+color: #808000 ;
+font-size: 47px;
+
+}
+ 
+h3 {
+background-color: #FFF8DC ;
+letter-spacing: 1.2px ;
+text-decoration: line-through;
+text-align: center;
+font-size: 30px;
+color: #CD5C5C ;
+font-weight: 550 ;
+}
+
+.imgm{
+	margin: 10px 50px 10px 50px  ;
+
+}
+
+.content {
+margin: 10px 50px 10px 50px  ;
+font-family: helvetica ,arial ;
+font-size: 16px ;
+}
+
+.ot {
+background-color: #ADD8E6 ;
+margin-right: 25px ;
+margin-left: 25px ;
+}
+
+.nex {
+color : #C71585;
+text-transform: 220px ;
+margin-left: 5px ;
+text-decoration: underline;
+font-size: 18px ;
+font-family: helvetica , arial  ;
+}
+
+.nexcon {
+font-family: arial ;
+}
+
+/*  div{
+	font-size: 110% ;
+	font-style: bold;	
+		} */
+
+  table {
+  margin: 8px ; 
+   font-size: 20px;
+   border-collapse: collapse;
+   width: 99%;
+		}
+
+   th {
+ 	column-width: 250px ;
+    border: 1px solid navy ;
+    text-align: left;
+    padding: 12px;
+		}
+
+.last {
+	font-size: 17px; 
+	font-style: italic;
+	width: 100px ;
+	margin: 8px 10px 7px 0px;
+	background-color: #F0FFF0 ;
+}
+ 
+/* 
+<!-- for mainn headings -->
+h3 {
+font-size: 22px;
+color: #708090 ;
+} */
+
+/*
+<!-- for the top tablee -->
+th li {
+ 
+}
+*/
+
+/*
+<!-- for the contennt of each sectionn -->
+.content {
+font-family: arial , helvetica ;
+}
+*/
+
+/*
+<!-- for only nexus headings -->
+.nex {
+font-family: comic sans-ms ;
+}
+*/
+
+/*
+<!-- for all references -->
+.ot {
+background-color: #ADD8E6 ;
+}
+*/
+
+/*
+<!-- for all references hyperlinks -->
+p > a {
+	
+}
+*/
+
