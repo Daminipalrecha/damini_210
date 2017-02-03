@@ -1,0 +1,174 @@
+body{
+	margin: 0;
+	padding: 0px 80px 0px 80px;
+    background-image: url(backk3.jpg) ;
+    
+    }
+
+.only1{
+ box-shadow: 3px 4px 20px #99ffff ;
+}
+.backt {
+ background-image: url(d1.jpg);
+ 
+}
+
+h1{
+ box-shadow: -7px 3px 25px #9fbfdf;
+ text-shadow: 3px -1px 20px #002233;
+ text-align: left ;
+ background-color: #ffd9b3 ;
+ color: #001133 ;
+ font-size: 60px;
+ margin: 5px 0px 10px 0px !important ;
+
+}
+
+
+h3 {
+background-color:  #f2f2f2 ;
+letter-spacing: 1.7px ;
+text-decoration: underline;
+text-align: left ;
+font-size: 30px ;
+color: black ;
+text-shadow: 10px 10px 59px silver ;
+
+}
+
+
+.sideimg {
+	align-content: center;
+	float: left;
+
+}
+
+
+.endfloat {
+	clear: both;
+	padding-bottom: 5px;
+}
+
+ul li {
+	font-family: helvetica ,arial ;
+font-size: 19px ;
+color: #b30000 ;
+}
+
+.content {
+margin: 10px 50px 10px 50px  ;
+font-family: helvetica ,arial ;
+font-size: 19px ;
+color: #b30000 ;
+box-shadow: 3px -4px 20px #ff8080 ;
+}
+
+
+.ot {
+
+background-color: #e0e0eb ;
+color: #14141f ;
+margin-right: 25px ;
+margin-left: 25px ;
+}
+
+
+.nex {
+color : black ;
+text-transform: 220px ;
+margin-left: 5px ;
+text-decoration: underline;
+font-size: 21px ;
+font-family: helvetica , arial  ;
+}
+
+
+.nexcon {
+font-family: arial ;
+}
+
+/*  div{
+	font-size: 110% ;
+	font-style: bold;	
+		} */
+
+
+/*
+caption {
+	font-family: arial , sans-serif ;
+	color: #4682B4 ;
+	font-size: 110% ;
+	text-align: left;
+	margin-left: 10px; 
+}
+*/
+  table {
+  border-collapse: collapse;
+   font-size: 17px;
+   width: 100%;
+   font-family: arial , sans-serif ;
+		}
+
+   th {
+
+ 	column-width: 250px ;
+    border: none ;
+    box-shadow: 10px 7px 27px  #C0C0C0;
+    text-align: left;
+    padding: 12px;
+		}
+ 
+/* 
+<!-- for mainn headings -->
+h3 {
+font-size: 22px;
+color: #708090 ;
+} */
+
+/*
+<!-- for the top tablee -->
+th li {
+ 
+}
+*/
+
+/*
+<!-- for the contennt of each sectionn -->
+.content {
+font-family: arial , helvetica ;
+}
+*/
+
+/*
+<!-- for only nexus headings -->
+.nex {
+font-family: comic sans-ms ;
+}
+*/
+
+/*
+<!-- for all references -->
+.ot {
+background-color: #ADD8E6 ;
+}
+*/
+
+/*
+<!-- for all references hyperlinks -->
+p > a {
+	
+}
+*/
+
+.last {
+	font-size: 17px; 
+	font-style: italic;
+	width: 100px ;
+	margin: 8px 10px 7px 0px;
+	background-color: #F0FFF0 ;
+}
+
+a:hover , a:active {
+
+	background-color: #d9d9d9 ;
+}
