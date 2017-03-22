@@ -17,7 +17,6 @@ document.addEventListener("DOMContentLoaded",
                 var temp1 = res.ques1 ;
               }
                 
-              }
               else if (temp === res.student2) {
                 var temp1= res.ques2 ;
               }
@@ -25,6 +24,7 @@ document.addEventListener("DOMContentLoaded",
               else {
                 var temp1 = "no such student";
               }
+            }
 
               document.querySelector("#content")
                 .innerHTML = temp1 ;
