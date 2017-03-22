@@ -28,6 +28,7 @@ document.addEventListener("DOMContentLoaded",
 
               document.querySelector("#content")
                 .innerHTML = temp1 ;
+                
             });
       });
   
