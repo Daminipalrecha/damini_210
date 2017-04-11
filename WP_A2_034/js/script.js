@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded",
               var msg = "" ;
               if ( temp === res.student1) {
                 msg = res.ques1+"<br>" ;
+                document.getElementById("content").innerHTML = msg ;
 
               if(document.getElementById("t").checked){
                 ans = "true"; }
@@ -27,11 +28,13 @@ document.addEventListener("DOMContentLoaded",
                 else{
                   msg+="Right answer is True.<br>" ;
                 }
-                document.getElementById("content").innerHTML = msg ;
+                
               }
                 
               else if (temp === res.student2) {
               msg = res.ques2+"<br>" ;
+              document.getElementById("content").innerHTML = msg ;
+              
               if(document.getElementById("f").checked){
                 ans = "false";  }
                   else{ ans = "true"; }  
@@ -42,7 +45,6 @@ document.addEventListener("DOMContentLoaded",
                else{
                   msg+="Right answer is False.<br>" ;
                 }
-                document.getElementById("content").innerHTML = msg ;
               }
 
             else {
