@@ -40,11 +40,7 @@ document.addEventListener("DOMContentLoaded",
             });
 	}
 	document.getElementById("btn").value = "Submit";
-	
-
-
- 		
+		
       });
   }
 );
-
