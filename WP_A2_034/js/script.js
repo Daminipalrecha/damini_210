@@ -5,44 +5,50 @@ document.addEventListener("DOMContentLoaded",
     // Unobtrusive event binding
     document.querySelector("button")
       .addEventListener("click", function () {
-        
-        // Call server to get the name
-        $ajaxUtils
-          .sendGetRequest("data/name.json", 
-            function (res) {
+                 
+              if ( temp === res.student1) {
+                 // Call server to get the name
+              $ajaxUtils
+              .sendGetRequest("data/name.json", 
+              function (res) {
               var temp = document.getElementById("name").value;
               var ans = "" ;
               var msg = "" ;
-                 
-              if ( temp === res.student1) {
-                msg = res.ques1+"<br>" ;
-                ans = document.querySelector("input[name=btn]:checked").value;
-                if (res.ans == res.answer1) {
-                  msg+="Nice, right answer.<br>" ;
-                }
-                else{
+              msg = res.ques1+"<br>" ;
+              ans = document.querySelector("input[name=btn]:checked").value;
+              if (res.ans == res.answer1) {
+                 msg+="Nice, right answer.<br>" ;
+               }
+               else{
                   msg+="Right answer is True.<br>" ;
                 }
-              }
+              });
+            }
                 
               else if (temp === res.student2) {
-                msg = res.ques2+"<br>" ;
-                ans = document.querySelector("input[name=btn]:checked").value;
-                if (res.ans == res.answer2) {
+                 // Call server to get the name
+              $ajaxUtils
+              .sendGetRequest("data/name.json", 
+              function (res) {
+              var temp = document.getElementById("name").value;
+              var ans = "" ;
+              var msg = "" ;
+              msg = res.ques2+"<br>" ;
+              ans = document.querySelector("input[name=btn]:checked").value;
+              if (res.ans == res.answer2) {
                   msg+="Nice, right answer.<br>" ;
-                }
-                else{
+               }
+               else{
                   msg+="Right answer is False.<br>" ;
                 }
-              }
-
-              else {
+              
+              });
+          }
+            else {
                 msg = "no such student";
               }
 
-
               document.getElementById("content").innerHtml = msg ;
             });
-      });
+    });
   
-  });
