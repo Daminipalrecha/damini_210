@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded",
                 msg = "no such student";
               }
 
-              document.getElementById("content").innerHtml = msg ;
+              document.getElementById("content").innerHTML = msg ;
 
             });
     });
