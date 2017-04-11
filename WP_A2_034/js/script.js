@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded",
               var msg = "" ;
               if ( temp === res.student1) {
                 msg = res.ques1+"<br>" ;
-                ans = document.querySelector("input[name=btn]:checked").value;
+                ans = $("input.ad:checked").val();
                 if (res.ans == res.answer1) {
                  msg+="Nice, right answer.<br>" ;
                 }
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",
                 
               else if (temp === res.student2) {
               msg = res.ques2+"<br>" ;
-              ans = document.querySelector("input[name=btn]:checked").value;
+              ans = $("input.ad:checked").val();
               if (res.ans == res.answer2) {
                   msg+="Nice, right answer.<br>" ;
                }
