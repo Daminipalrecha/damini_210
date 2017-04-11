@@ -32,9 +32,9 @@ document.addEventListener("DOMContentLoaded",
               else if (temp === res.student2) {
               msg = res.ques2+"<br>" ;
 
-              if(document.getElementById("f").checked){
-                ans = "false";  }
-                  else{ ans = "true"; }  
+              if(document.getElementById("t").checked){
+                ans = "true";  }
+                  else{ ans = "false"; }  
 
               if (ans == res.answer2) {
                   msg+="Nice, right answer.<br>" ;
@@ -49,6 +49,8 @@ document.addEventListener("DOMContentLoaded",
               }
 
               document.getElementById("content").innerHTML = msg ;
+
+              
 
             });
     });
