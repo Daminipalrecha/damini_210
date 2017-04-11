@@ -10,27 +10,39 @@ document.addEventListener("DOMContentLoaded",
         $ajaxUtils
           .sendGetRequest("data/name.json", 
             function (res) {
-              var temp =
-              document.getElementById("name").value;
+              var temp = document.getElementById("name").value;
+              var ans = "" ;
+              var msg = "" ;
                  
               if ( temp === res.student1) {
-                var temp1 = res.ques1 ;
+                msg = res.ques1+"<br>" ;
+                ans = document.querySelector("input[name=btn]:checked").value;
+                if (res.ans == res.answer1) {
+                  msg+="Nice, right answer.<br>" ;
+                }
+                else{
+                  msg+="Right answer is True.<br>" ;
+                }
               }
                 
               else if (temp === res.student2) {
-                var temp1= res.ques2 ;
+                msg = res.ques2+"<br>" ;
+                ans = document.querySelector("input[name=btn]:checked").value;
+                if (res.ans == res.answer2) {
+                  msg+="Nice, right answer.<br>" ;
+                }
+                else{
+                  msg+="Right answer is False.<br>" ;
+                }
               }
 
               else {
-                var temp1 = "no such student";
+                msg = "no such student";
               }
-            }
 
-              document.querySelector("#content")
-                .innerHTML = temp1 ;
-                
+
+              document.getElementById("content").innerHtml = msg ;
             });
       });
   
-  }
-);
+  });

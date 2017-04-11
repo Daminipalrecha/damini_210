@@ -1,10 +1,10 @@
 {
 
-  "student1": "jack",
+  "student1": "Jack",
   "ques1" : "are you 18 ?" ,
-  "answer1" : ,
+  "answer1" : true,
 
-  "student2" : "joe",
+  "student2" : "Joe",
   "ques2" : "are you indian ?",
-  "answer2 " : 
+  "answer2 " : false
 }
