@@ -16,8 +16,12 @@ document.addEventListener("DOMContentLoaded",
               var msg = "" ;
               if ( temp === res.student1) {
                 msg = res.ques1+"<br>" ;
-                ans = $("input.ad:checked").val();
-                if (res.ans == res.answer1) {
+
+                if(document.getElementById("t").checked){
+                ans = "true"; }
+                  else{ ans = "false";  } 
+
+                if (ans == res.answer1) {
                  msg+="Nice, right answer.<br>" ;
                 }
                 else{
@@ -27,8 +31,12 @@ document.addEventListener("DOMContentLoaded",
                 
               else if (temp === res.student2) {
               msg = res.ques2+"<br>" ;
-              ans = $("input.ad:checked").val();
-              if (res.ans == res.answer2) {
+
+              if(document.getElementById("f").checked){
+                ans = "false";  }
+                  else{ ans = "true"; }  
+
+              if (ans == res.answer2) {
                   msg+="Nice, right answer.<br>" ;
                }
                else{
