@@ -17,7 +17,22 @@ document.addEventListener("DOMContentLoaded",
               if ( temp === res.student1) {
                 msg = res.ques1+"<br>" ;
 
-                if(document.getElementById("t").checked){
+              }
+                
+              else if (temp === res.student2) {
+              msg = res.ques2+"<br>" ;
+              }
+
+            else {
+                msg = "no such student";
+              }
+
+              document.getElementById("content").innerHTML = msg ;
+
+              if ( temp === res.student1) {
+                msg = res.ques1+"<br>" ;
+
+              if(document.getElementById("t").checked){
                 ans = "true"; }
                   else{ ans = "false";  } 
 
@@ -27,12 +42,11 @@ document.addEventListener("DOMContentLoaded",
                 else{
                   msg+="Right answer is True.<br>" ;
                 }
+                document.getElementById("content").innerHTML = msg ;
               }
-                
-              else if (temp === res.student2) {
-              msg = res.ques2+"<br>" ;
 
-              if(document.getElementById("t").checked){
+              if (temp === res.student2){
+                if(document.getElementById("t").checked){
                 ans = "true";  }
                   else{ ans = "false"; }  
 
@@ -42,15 +56,10 @@ document.addEventListener("DOMContentLoaded",
                else{
                   msg+="Right answer is False.<br>" ;
                 }
+                document.getElementById("content").innerHTML = msg ;
               }
 
-            else {
-                msg = "no such student";
-              }
 
-              document.getElementById("content").innerHTML = msg ;
-
-              
 
             });
     });
