@@ -15,8 +15,8 @@ document.addEventListener("DOMContentLoaded",
               var msg = "" ;
               var count=0;
               for (var i in res.sap){
-                if(temp == i){
-                  msg = "Name is :"+res.sap[i] +" and position is : "+count;
+                if(temp == res.sap[i]){
+                  msg = "Name is :"+res.name[i] +" and position is : "+count;
                   count=count +1 ;
 
                 }
