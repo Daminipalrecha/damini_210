@@ -12,18 +12,16 @@ document.addEventListener("DOMContentLoaded",
               .sendGetRequest("name.json", 
               function (res) {
             
-              var msg = "" ;
+              var msg = "No such student !!" ;
               var count=0;
-              for (var i in res.sap){
-                if(temp == res.sap[i]){
-                  msg = "Name is :"+res.name[i] +" and position is : "+count;
+              var sapn = res.sap ;
+              var names = res.name ; 
+              for (var i=0 ; i<10 ; i++){
+                if(temp == sapn[i]){
+                  msg = "Name is :"+names[i] +" and position is : "+count;
                   count=count +1 ;
+                  break ;
 
-                }
-
-                else {
-                msg = "no such student";
-                
                 }
 
               }
