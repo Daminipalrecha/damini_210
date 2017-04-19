@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded",
                 }
               }
 
-               document.getElementById("content").innerHTML = msg ;
+               document.querySelector("#content").innerHTML = msg ;
 
             });
     });
